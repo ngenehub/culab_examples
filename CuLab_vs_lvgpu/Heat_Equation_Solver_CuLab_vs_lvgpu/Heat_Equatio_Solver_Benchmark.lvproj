@@ -10,8 +10,8 @@
 		<Property Name="server.vi.callsEnabled" Type="Bool">true</Property>
 		<Property Name="server.vi.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
-		<Item Name="GEMM_Only(CuLab).vi" Type="VI" URL="../GEMM_Only(CuLab).vi"/>
-		<Item Name="GEMM_Only(lv_gpu).vi" Type="VI" URL="../GEMM_Only(lv_gpu).vi"/>
+		<Item Name="GEMV_Benchmark(CuLab).vi" Type="VI" URL="../GEMV_Benchmark(CuLab).vi"/>
+		<Item Name="GEMV_Benchmark(lv_gpu).vi" Type="VI" URL="../GEMV_Benchmark(lv_gpu).vi"/>
 		<Item Name="Heat Equation Solver(CuLab).vi" Type="VI" URL="../Heat Equation Solver(CuLab).vi"/>
 		<Item Name="Heat Equation Solver(lv_gpu).vi" Type="VI" URL="../Heat Equation Solver(lv_gpu).vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
