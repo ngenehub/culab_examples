@@ -15,6 +15,7 @@
 		</Item>
 		<Item Name="Conv1D.vi" Type="VI" URL="../Conv1D.vi"/>
 		<Item Name="FFT1D.vi" Type="VI" URL="../FFT1D.vi"/>
+		<Item Name="PCIe_BandWidth.vi" Type="VI" URL="../PCIe_BandWidth.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="BuildHelpPath.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/BuildHelpPath.vi"/>
@@ -74,7 +75,6 @@
 			<Item Name="cudart64_110.dll" Type="Document" URL="/&lt;resource&gt;/cudart64_110.dll"/>
 			<Item Name="cufft64_10.dll" Type="Document" URL="/&lt;resource&gt;/cufft64_10.dll"/>
 			<Item Name="culab64_1_1.dll" Type="Document" URL="/&lt;resource&gt;/culab64_1_1.dll"/>
-			<Item Name="CuLab_Conv1D_Find_Next_Factorizible_Number.vi" Type="VI" URL="../../../../../Projects_SVN/CuLab/_Projects/_Benchmarks/2024_09_09_FFT_Prime_Factorization/CuLab_Conv1D_Find_Next_Factorizible_Number.vi"/>
 			<Item Name="CULAB_KEYLIB64.dll" Type="Document" URL="/&lt;resource&gt;/CULAB_KEYLIB64.dll"/>
 			<Item Name="CULAB_SKCA64.dll" Type="Document" URL="/&lt;resource&gt;/CULAB_SKCA64.dll"/>
 			<Item Name="lvanlys.dll" Type="Document" URL="/&lt;resource&gt;/lvanlys.dll"/>
