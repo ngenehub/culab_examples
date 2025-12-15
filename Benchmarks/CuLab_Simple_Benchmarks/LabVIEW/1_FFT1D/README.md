@@ -5,7 +5,7 @@
 ### FFT1D_Top.vi
 <p align="center">
   <img alt="image" src="https://github.com/user-attachments/assets/96c9ea78-a189-475c-80f7-ea549158f208"/>
-  <i>FFT1D_Top.vi Front Panel</i> <br/>
+  <p align="center"><i>FFT1D_Top.vi Front Panel</i> <br/>
 
 </p>
 
@@ -45,7 +45,7 @@ Implementation of the project VI is provided below.
 <p align="center">
 
   <img alt="image" src="https://github.com/user-attachments/assets/ed2c33d9-78ca-4844-8534-9e0548e4c186" />
-    <i>FFT1D_Top.vi Block Diagram</i> <br/>
+    <p align="center"><i>FFT1D_Top.vi Block Diagram</i> <br/>
 
 
 </p>
@@ -56,7 +56,7 @@ Implementation of the project VI is provided below.
 
 <p align="center">
  <img alt="image" src="https://github.com/user-attachments/assets/7133948d-98ee-49ef-8b58-7248687d7acd" />
-  <i>FFT1D_CuLab.vi Block Diagram</i> <br/>
+  <p align="center"><i>FFT1D_CuLab.vi Block Diagram</i> <br/>
 </p>
 
 <br/>
@@ -64,10 +64,10 @@ Implementation of the project VI is provided below.
 **FFT1D_LabVIEW.vi**
 
 <p align="center">
-
- <img width="859" height="346" alt="image" src="https://github.com/user-attachments/assets/0798591f-3089-4393-8771-c4eefbb26af1" />
- <i>FFT1D_LabVIEW.vi Block Diagram</i> <br/>
-
+ <img alt="image" src="https://github.com/user-attachments/assets/0798591f-3089-4393-8771-c4eefbb26af1" />
+  
+<p align="center"><i>FFT1D_LabVIEW.vi Block Diagram</i> 
+  <br/>
 </p>
 
 <br/>
