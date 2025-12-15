@@ -5,17 +5,14 @@ import time
 import csv
 import os
 
-from datetime import datetime
 
 # Define the CSV file path with timestamp and save destination
-current_directory = os.path.dirname(__file__)
-save_destination = os.path.join(current_directory, "results","FFT")
-os.makedirs(save_destination, exist_ok=True)  # Ensure the directory exists, create if necessary
-
-timestamp = datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
 gpu_props = cp.cuda.runtime.getDeviceProperties(0)
 gpu_name = gpu_props['name'].decode('utf-8').replace(" ", "_").replace(".", "")
-csv_file_path = os.path.join(save_destination, f"FFT_CuPY_SGL_{timestamp}_{gpu_name}.csv")
+current_directory = os.path.dirname(__file__)
+save_destination = os.path.join(current_directory, "results", gpu_name)
+os.makedirs(save_destination, exist_ok=True)  # Ensure the directory exists, create if necessary
+csv_file_path = os.path.join(save_destination, "FFT1D_CuPy.csv")
 
 # Open a CSV file in write mode
 with open(csv_file_path, mode='w', newline='') as csv_file:
@@ -25,7 +22,7 @@ with open(csv_file_path, mode='w', newline='') as csv_file:
     # Write the header row
     writer.writerow(['Size','Execution Time (s)'])
     
-    no_of_runs = 20
+    no_of_runs = 200
     
     Benchmark_Params = [
         {"Size": 1024, "Iteration": no_of_runs},
@@ -44,8 +41,7 @@ with open(csv_file_path, mode='w', newline='') as csv_file:
         {"Size": 8388608, "Iteration": no_of_runs},
         {"Size": 16777216, "Iteration": no_of_runs},
         {"Size": 33554432, "Iteration": no_of_runs},
-        {"Size": 67108864, "Iteration": no_of_runs},
-        {"Size": 134217728, "Iteration": no_of_runs}
+        {"Size": 67108864, "Iteration": no_of_runs}
     ]
     
     
@@ -64,23 +60,22 @@ with open(csv_file_path, mode='w', newline='') as csv_file:
         cp.cuda.Device(0).synchronize()
         
         for i in range(Iteration):
-            start_iter = time.perf_counter()
+            start_iter = time.perf_counter_ns()
             ###########################
             Signal_cp = cp.asarray(Signal_np)
             out = cp.fft.fft(Signal_cp)
             fftnp = cp.asnumpy(out)
             ###########################
-            end_iter = time.perf_counter()
+            end_iter = time.perf_counter_ns()
             
-            dt_list.append(end_iter - start_iter)
+            dt_list.append((end_iter - start_iter)*1e-9)
        # print(f"{dt_list}")
         # Remove warm-up iterations from the front
         print (len(dt_list[warmup_iterations:]))
-        mean_dt = sum(dt_list[warmup_iterations:]) / len(dt_list[warmup_iterations:])
-        cupy_exec_time_ms = mean_dt * 1000
-        writer.writerow([Size, cupy_exec_time_ms])
+        dt = np.median(dt_list[warmup_iterations:])
+        writer.writerow([Size, dt])
 
-        print(f"{Size:>7} - {cupy_exec_time_ms:8.8f} ms")       
+        print(f"{Size:>7} - {dt:8.8f} s")       
         cp.get_default_memory_pool().free_all_blocks()
         cp.get_default_pinned_memory_pool().free_all_blocks()
 
