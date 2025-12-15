@@ -15,11 +15,11 @@
 
 The table below compares execution times for different data sizes using **CuLab**, **LabVIEW**, and **CuPy**. Each column represents the input size, and each row shows the measured execution time in seconds for the corresponding framework.
 
-| Size | 1024 | 2048 | 4096 | 8192 | 16384 | 32768 | 65536 | 131072 | 262144 | 524288 | 1048576 | 2097152 | 4194304 | 8388608 | 16777216 | 33554432 | 67108864 |
-|-----------|------|------|------|------|-------|-------|-------|--------|--------|--------|---------|---------|---------|---------|----------|----------|----------|
-| **CuLab**   | 0.000026 | 0.000033 | 0.000043 | 0.000059 | 0.000097 | 0.000116 | 0.000177 | 0.000332 | 0.000501 | 0.000855 | 0.001643 | 0.003234 | 0.0062 | 0.012409 | 0.025107 | 0.049336 | 0.097768 |
-| **LabVIEW** | 0.000007 | 0.000016 | 0.000034 | 0.000084 | 0.000222 | 0.000475 | 0.001033 | 0.002216 | 0.005093 | 0.014875 | 0.034042 | 0.074939 | 0.15647 | 0.34137 | 0.804774 | 1.961839 | 3.783935 |
-| **CuPy**    | 0.000102 | 0.000105 | 0.000108 | 0.000115 | 0.000136 | 0.000159 | 0.000219 | 0.000488 | 0.000778 | 0.001416 | 0.002774 | 0.005581 | 0.011203 | 0.022492 | 0.045094 | 0.089078 | 0.176652 |
+| Size        | 1024   | 2048   | 4096   | 8192   | 16384  | 32768  | 65536  | 131072 | 262144 | 524288 | 1048576 | 2097152 | 4194304 | 8388608 | 16777216 | 33554432 | 67108864 |
+|------------|--------|--------|--------|--------|--------|--------|--------|--------|--------|--------|---------|---------|---------|---------|----------|----------|----------|
+| **CuLab**   | 26u    | 33u    | 43u    | 59u    | 97u    | 116u   | 177u   | 332u   | 501u   | 855u   | 1.643m  | 3.234m  | 6.2m    | 12.409m | 25.107m  | 49.336m  | 97.768m  |
+| **LabVIEW** | 7u     | 16u    | 34u    | 84u    | 222u   | 475u   | 1.033m | 2.216m | 5.093m | 14.875m| 34.042m | 74.939m | 156.47m | 341.37m | 804.774m | 1.961839 | 3.783935 |
+| **CuPy**    | 102u    | 105u    | 108u    | 115u    | 136u    | 159u    | 219u    | 488u    | 778u    | 1.416m  | 2.774m  | 5.581m  | 11.203m | 22.492m | 45.094m  | 89.078m  | 176.652m |
 
 
 ### CuLab Performance Gain
@@ -34,7 +34,7 @@ The table below shows the performance gain of **CuLab** compared to **LabVIEW** 
 
 **Conclusion**
 
-CuLab significantly outperforms LabVIEW (mean gain **15×**, max **40×**) and CuPy (mean gain **2×**, max **4×**), with its advantage most noticeable on **larger data sizes**.
+CuLab significantly outperforms LabVIEW (mean gain **15×**, max **40×**) and CuPy (mean gain **2×**, max **4×**). The performance gain over LabVIEW is more noticeable on larger data sizes, while the gain over CuPy is more evident on smaller data sizes due to Python's overhead.
 
 
 ### Project VI Implementation
