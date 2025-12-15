@@ -17,7 +17,7 @@
 		<Item Name="_utils" Type="Folder" URL="../_utils">
 			<Property Name="NI.DISK" Type="Bool">true</Property>
 		</Item>
-		<Item Name="1_FFT" Type="Folder" URL="../1_FFT">
+		<Item Name="1_FFT1D" Type="Folder" URL="../1_FFT1D">
 			<Property Name="NI.DISK" Type="Bool">true</Property>
 		</Item>
 		<Item Name="2_GEMM" Type="Folder" URL="../2_GEMM">
