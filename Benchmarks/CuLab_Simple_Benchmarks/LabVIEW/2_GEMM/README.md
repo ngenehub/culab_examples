@@ -1,21 +1,24 @@
 ### Benchmark Description
-GEMM performance comparison across multiple input sizes for **CuLab**, **LabVIEW**, and **CuPy**.
+GEMM performance comparison across multiple input sizes for [**CuLab**](https://www.ngene.co/gpu-toolkit-for-labview), **LabVIEW**, and **CuPy**.
 
 
 ### GEMM_Top.vi
 <p align="center">
-<img alt="image" src="https://github.com/user-attachments/assets/56dc9623-e327-4215-9c47-8a8023ec1b59" />
+<img " alt="image" src="https://github.com/user-attachments/assets/4dfe4cec-588b-415e-8434-a7024a60099b" />
   <p align="center"><i>GEMM_Top.vi Front Panel</i> <br/>
 
 </p>
 
 <br/>
 
-**GEMM Benchmark**
+### GEMM Benchmark
 
 This benchmark measures execution time of **matrix multiplication (GEMM)** for different matrix sizes (M × N), comparing **CuLab**, **LabVIEW**, and **CuPy**.
 
-| Tool / Size (M × N) | 64     | 128    | 256    | 512    | 1024   | 2048   | 4096   | 8192   |
+### [System Information](https://github.com/ngenehub/culab_examples/tree/main/Benchmarks/CuLab_Simple_Benchmarks#system-information)
+
+### Benchmark Results – Execution Time
+| Size (M × N) | 64     | 128    | 256    | 512    | 1024   | 2048   | 4096   | 8192   |
 |--------------------|--------|--------|--------|--------|--------|--------|--------|--------|
 | **CuLab**          | 40u    | 59u    | 151u   | 424u   | 1.383m | 5.5m   | 26.174m| 143.78m|
 | **LabVIEW**        | 8u     | 83u    | 481u   | 3.748m | 30.043m| 239.559m| 1.918907| 15.7306 |
@@ -44,7 +47,7 @@ Implementation of the project VI is provided below.
 
 **GEMM_Top.vi**
 <p align="center">
-<img " alt="image" src="https://github.com/user-attachments/assets/300490b3-b46f-4768-8198-204074a1daa1" />
+<img width="1581" height="562" alt="image" src="https://github.com/user-attachments/assets/3c96e70d-4d8d-4a51-880d-3df8d435ef3f" />
    <p align="center"><i>GEMM_Top.vi Block Diagram</i> <br/>
 
 
@@ -55,7 +58,7 @@ Implementation of the project VI is provided below.
 **GEMM_CuLab.vi**
 
 <p align="center">
- <img alt="image" src="https://github.com/user-attachments/assets/45bcddfa-372f-411f-991c-3039ff7fbcc5" />
+<img width="1236" height="487" alt="image" src="https://github.com/user-attachments/assets/c3296e88-2d0b-4342-ad35-eb6643e39c9c" />
   <p align="center"><i>GEMM_CuLab.vi Block Diagram</i> <br/>
 </p>
 
@@ -64,7 +67,7 @@ Implementation of the project VI is provided below.
 **GEMM_LabVIEW.vi**
 
 <p align="center">
- <img width="1087" height="418" alt="image" src="https://github.com/user-attachments/assets/a093a04d-a109-4dba-81c4-87e7e95f6e3f" />
+<img width="752" height="285" alt="image" src="https://github.com/user-attachments/assets/028a7d7d-1a82-48bc-8a04-482383342b47" />
 <p align="center"><i>GEMM_LabVIEW.vi Block Diagram</i> 
   <br/>
 </p>

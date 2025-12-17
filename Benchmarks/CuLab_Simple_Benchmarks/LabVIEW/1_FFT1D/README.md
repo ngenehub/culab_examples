@@ -1,10 +1,10 @@
 ### Benchmark Description
-1D FFT performance comparison across multiple input sizes for **CuLab**, **LabVIEW**, and **CuPy**.
+1D FFT performance comparison across multiple input sizes for [**CuLab**](https://www.ngene.co/gpu-toolkit-for-labview), **LabVIEW**, and **CuPy**.
 
 
 ### FFT1D_Top.vi
 <p align="center">
-  <img alt="image" src="https://github.com/user-attachments/assets/96c9ea78-a189-475c-80f7-ea549158f208"/>
+  <img alt="image" src="https://github.com/user-attachments/assets/3b237d88-6fbc-424b-851a-74d654fc2df4" />
   <p align="center"><i>FFT1D_Top.vi Front Panel</i> <br/>
 
 </p>
@@ -14,6 +14,11 @@
 ### Benchmark Results - Execution Time (seconds)
 
 The table below compares execution times for different data sizes using **CuLab**, **LabVIEW**, and **CuPy**. Each column represents the input size, and each row shows the measured execution time in seconds for the corresponding framework.
+
+### [System Information](https://github.com/ngenehub/culab_examples/tree/main/Benchmarks/CuLab_Simple_Benchmarks#system-information)
+
+
+### Benchmark Results – Execution Time
 
 | Size        | 1024   | 2048   | 4096   | 8192   | 16384  | 32768  | 65536  | 131072 | 262144 | 524288 | 1048576 | 2097152 | 4194304 | 8388608 | 16777216 | 33554432 | 67108864 |
 |------------|--------|--------|--------|--------|--------|--------|--------|--------|--------|--------|---------|---------|---------|---------|----------|----------|----------|
@@ -43,11 +48,8 @@ Implementation of the project VI is provided below.
 
 **FFT1D_Top.vi**
 <p align="center">
-
-  <img alt="image" src="https://github.com/user-attachments/assets/ed2c33d9-78ca-4844-8534-9e0548e4c186" />
+<img width="1581" height="563" alt="image" src="https://github.com/user-attachments/assets/77950e76-3e9b-45bd-ac82-060f1d29e8e9" />
     <p align="center"><i>FFT1D_Top.vi Block Diagram</i> <br/>
-
-
 </p>
 
 <br/>
@@ -55,7 +57,7 @@ Implementation of the project VI is provided below.
 **FFT1D_CuLab.vi**
 
 <p align="center">
- <img alt="image" src="https://github.com/user-attachments/assets/7133948d-98ee-49ef-8b58-7248687d7acd" />
+<img width="852" height="357" alt="image" src="https://github.com/user-attachments/assets/030b0dbd-971a-468e-b06f-b9d9af74b8d5" />
   <p align="center"><i>FFT1D_CuLab.vi Block Diagram</i> <br/>
 </p>
 
@@ -64,8 +66,7 @@ Implementation of the project VI is provided below.
 **FFT1D_LabVIEW.vi**
 
 <p align="center">
- <img alt="image" src="https://github.com/user-attachments/assets/0798591f-3089-4393-8771-c4eefbb26af1" />
-  
+<img width="717" height="300" alt="image" src="https://github.com/user-attachments/assets/88c5d6ff-a36d-4dff-82aa-10d9a031e96d" />
 <p align="center"><i>FFT1D_LabVIEW.vi Block Diagram</i> 
   <br/>
 </p>

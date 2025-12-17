@@ -1,20 +1,23 @@
 ### Benchmark Description
-Conv1D performance comparison across multiple input sizes for **CuLab**, **LabVIEW**, and **CuPy**.
+Conv1D performance comparison across multiple input sizes for [**CuLab**](https://www.ngene.co/gpu-toolkit-for-labview), **LabVIEW**, and **CuPy**.
 
 
 ### Conv1D_Top.vi
 <p align="center">
-  <img  alt="image" src="https://github.com/user-attachments/assets/fa37403a-8599-4432-a5d6-ba53065553a4" />
+<img alt="image" src="https://github.com/user-attachments/assets/755db844-70cd-4ee6-b462-6e371668cc17" />
   <p align="center"><i>Conv1D_Top.vi Front Panel</i> <br/>
 
 </p>
 
 <br/>
 
-**1D Convolution Benchmark**
+### 1D Convolution Benchmark
 
 This benchmark measures execution time of **1D convolution** for different input sizes, comparing **CuLab**, **LabVIEW**, and **CuPy**.
 
+### [System Information](https://github.com/ngenehub/culab_examples/tree/main/Benchmarks/CuLab_Simple_Benchmarks#system-information)
+
+### Benchmark Results – Execution Time
 
 |  Size | 32     | 64     | 128    | 256    | 512    | 1024   | 2048   | 4096   | 8192   | 16384  | 32768  | 65536  | 131072 | 262144 | 524288 | 1048576 | 2097152 | 4194304 | 8388608 |
 |-------------|--------|--------|--------|--------|--------|--------|--------|--------|--------|--------|--------|--------|--------|--------|--------|---------|---------|---------|---------|
@@ -45,7 +48,7 @@ Implementation of the project VI is provided below.
 
 **Conv1D_Top.vi**
 <p align="center">
-<img alt="image" src="https://github.com/user-attachments/assets/bbe66d5b-a4c2-4d2e-bc4f-b82f292e619e" />
+<img width="1705" height="471" alt="image" src="https://github.com/user-attachments/assets/d94680e8-388c-468f-8e90-4885317cab85" />
    <p align="center"><i>Conv1D_Top.vi Block Diagram</i> <br/>
 
 
@@ -56,7 +59,7 @@ Implementation of the project VI is provided below.
 **Conv1D_CuLab.vi**
 
 <p align="center">
- <img alt="image" src="https://github.com/user-attachments/assets/c59d8bed-0449-45bd-953c-45b1074318d6" />
+<img width="1226" height="463" alt="image" src="https://github.com/user-attachments/assets/cc06b038-175a-45b9-8606-14121adc5de7" />
   <p align="center"><i>Conv1D_CuLab.vi Block Diagram</i> <br/>
 </p>
 
@@ -65,7 +68,7 @@ Implementation of the project VI is provided below.
 **Conv1D_LabVIEW.vi**
 
 <p align="center">
-<img alt="image" src="https://github.com/user-attachments/assets/b348f1aa-b7fb-428c-911a-33ae43a97a0c" />
+<img width="942" height="326" alt="image" src="https://github.com/user-attachments/assets/3a20ca49-0cb1-43d0-858e-b5b064b0bce4" />
 <p align="center"><i>Conv1D_LabVIEW.vi Block Diagram</i> 
   <br/>
 </p>
